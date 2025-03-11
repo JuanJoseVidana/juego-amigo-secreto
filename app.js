@@ -29,5 +29,18 @@ function agregarAmigo() {
     } else {
         amigos.push(nuevoNombre); // Agregar el nuevo nombre a la lista
         document.getElementById('amigo').value = ''; // Limpiar el campo de entrada
+        actualizarLista(); // Actualizar la lista de amigos
+    }
+}
+
+
+function actualizarLista() {
+    const lista = document.getElementById('listaAmigos'); // Obtener el elemento de la lista
+    lista.innerHTML = ''; // Limpiar la lista actual
+
+    for (let i = 0; i < amigos.length; i++) { // Iterar sobre la lista de amigos
+        const item = document.createElement('li'); // Crear un elemento de lista
+        item.appendChild(document.createTextNode(amigos[i])); // Agregar el nombre del amigo
+        lista.appendChild(item); // Agregar el elemento a la lista
     }
 }
