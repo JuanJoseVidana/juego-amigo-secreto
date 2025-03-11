@@ -25,7 +25,7 @@ Esta aplicación web permite a los usuarios crear una lista de amigos y realizar
 1. **Clonar el repositorio:**
 
 ```bash
-git clone https://github.com/tu-usuario/amigo-secreto.git
+git clone  https://github.com/JuanJoseVidana/juego-amigo-secreto.git
 ```
 
 2. **Abrir el archivo HTML:**
