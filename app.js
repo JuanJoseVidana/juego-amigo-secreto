@@ -19,3 +19,15 @@ Uso: Simplemente vincula este script a un archivo HTML, y la aplicación manejar
 Última actualización: 10/03/2025
 */
 
+let amigos = []; // Inicializar un arreglo vacío para almacenar los nombres de los amigos
+
+function agregarAmigo() {
+    const nuevoNombre = document.getElementById('amigo').value; // Obtener el elemento de entrada
+    if (nuevoNombre === '') { // Verificar si la entrada está vacía
+        alert('Por favor, inserte un nombre.'); // Mostrar un mensaje de alerta
+        return; // Salir de la función
+    } else {
+        amigos.push(nuevoNombre); // Agregar el nuevo nombre a la lista
+        document.getElementById('amigo').value = ''; // Limpiar el campo de entrada
+    }
+}
